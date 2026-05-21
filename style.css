@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+#bastao{
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+}
+
+#cima{
+    width: 20px;
+    height: 70px;
+    background-color: white;
+    border-radius: 20px 20px 0 0;
+}
+#meio{
+    width: 20px;
+    height: 70px;
+    background-color: white;
+}
+#baixo{
+    width: 20px;
+    height: 70px;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+#bola{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 90%;
+}
+.tempo{
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    font-size: 100px;
+}
+#ms{
+    width: 105px;
+}
+#seg{
+    width: 105px;
+}
+#min{
+    width: 105px;
+}
+.tempoR{
+    position: absolute;
+    display: flex;
+    color: white;
+    top: 25px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-family: fantasy;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#minR{
+    margin-left: 5px;
+}
+.Rbody{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: fantasy;
+    color: white;
+    font-size: 70px;
+    animation: fim 800ms linear infinite;
+}
+@keyframes fim {
+    0%   { opacity: 1; }
+    49%  { opacity: 1; }
+    50%  { opacity: 0; }
+    99%  { opacity: 0; }
+    100% { opacity: 1; }
+}
